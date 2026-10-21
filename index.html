@@ -91,7 +91,7 @@
           <article class="project">
             <img
               class="project-image"
-              src="images/placeholder.png"
+              src="images/backlog.png"
               alt="Screenshot of project"
               width="1280"
               height="800"
@@ -99,14 +99,30 @@
             />
             <div class="project-content">
               <span class="meta">2026 · Solo project</span>
-              <h3>Project Name</h3>
-              <p>Short description</p>
-              <p>Bit more info</p>
+              <h3>Backlog</h3>
+              <p>
+                An all-in-one media backlog tracker for movies, tv shows, books,
+                & games. Discover new content and connect with friends to share
+                recommendations.
+              </p>
+              <p>
+                Backlog is my first AI built full stack application. Claude
+                wrote most of the code while I drove the product direction,
+                design/UX, and setting up third party services.
+              </p>
               <ul class="tech">
-                <li>Tech stack</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Vercel</li>
+                <li>Supabase</li>
               </ul>
               <div class="links">
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://backlog.outh.nz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Live link<svg
                     aria-hidden="true"
                     width="15"
@@ -120,7 +136,133 @@
                   >
                     <path d="M7 17 17 7M8 7h9v9" /></svg
                 ></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a
+                  href="https://github.com/sean-outhwaite/backlog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub link<svg
+                    aria-hidden="true"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project-flip">
+            <img
+              class="project-image"
+              src="images/clicker.png"
+              alt="Screenshot of project"
+              width="1280"
+              height="800"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <span class="meta">2026 · Solo project</span>
+              <h3>Clicker</h3>
+              <p>
+                A cross-platform auto clicker application. Can capture cursor
+                position to set where you want to click, then alternates clicks
+                between two positions - stopping when the mouse is manually
+                moved or a key is pressed. Click count per position can be
+                configured in the UI, and click timing is randomised within a
+                set range.
+              </p>
+              <p>
+                I had been spending a bit time using AI to build Backlog, so I
+                wanted a more hands-on project to make sure I wasn't going
+                rusty. It's built in C#, which I had limited experience with
+                before and can be built to run on macOS and Windows.
+              </p>
+              <ul class="tech">
+                <li>C#</li>
+                <li>.NET 10</li>
+                <li>Avalonia</li>
+                <li>SharpHook</li>
+                <li>XAML</li>
+              </ul>
+              <div class="links">
+                <a
+                  href="https://github.com/sean-outhwaite/clicker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub link<svg
+                    aria-hidden="true"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
+              src="images/shoplock.png"
+              alt="Screenshot of project"
+              width="1280"
+              height="800"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <span class="meta">2026 · Solo project</span>
+              <h3>Shoplock</h3>
+              <p>
+                An almost 1:1 replica of the item shop from Valve's game
+                Deadlock. View live item data fetched from the community API and
+                create a build of your desired items.
+              </p>
+              <p>
+                I really like a lot of the UI and interactions in this game. I
+                wanted to look under the hood to see how Valve does this, so I
+                learnt about their Panorama UI system and did my best to rebuild
+                the shop as a fully front-end app - including animations, and
+                sound effects.
+              </p>
+              <ul class="tech">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+              </ul>
+              <div class="links">
+                <a
+                  href="https://shoplock.sean-outhwaite.workers.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live link<svg
+                    aria-hidden="true"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg
+                ></a>
+                <a
+                  href="https://github.com/sean-outhwaite/shoplock"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >GitHub link<svg
                     aria-hidden="true"
                     width="15"
@@ -143,11 +285,14 @@
     <footer id="contact" class="site-footer">
       <div class="container contact">
         <h2 class="section-title">Contact</h2>
-        <p class="btn btn-accent">Email</p>
+        <p class="contact-title">Let's chat.</p>
+        <a href="mailto:sean.outhwaite@gmail.com" class="btn btn-accent"
+          >Email</a
+        >
         <ul class="social">
-          <li>LinkedIn</li>
-          <li>GitHub</li>
-          <li>CV</li>
+          <li><a href="http://linkedin.com/in/sean-outhwaite">LinkedIn</a></li>
+          <li><a href="https://github.com/sean-outhwaite">GitHub</a></li>
+          <li><a href="placeholder.pdf">CV</a></li>
         </ul>
         <p>© 2024 Sean Outhwaite</p>
       </div>

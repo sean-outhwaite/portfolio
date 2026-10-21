@@ -311,6 +311,10 @@ ul {
   align-items: center;
 }
 
+.project-flip {
+  flex-direction: row-reverse;
+}
+
 .project-image {
   flex: 999 1 420px;
   min-width: 0;
@@ -388,6 +392,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  max-width: 18ch;
 }
 
 .social {
