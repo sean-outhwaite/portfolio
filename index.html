@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1 class="logo">Sean Outhwaite</h1>
+    <header class="site-header container">
+      <a href="#summary" class="logo">Sean Outhwaite</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <main>
-      <section class="hero container">
+      <section id="summary" class="hero container">
         <p>Open to developer roles.</p>
         <h1>Intro sentence</h1>
         <p>Short bio</p>
@@ -32,7 +37,12 @@
         <div class="container">
           <div>
             <h2>About Me</h2>
-            <p>***Image***</p>
+            <img
+              src="placeholder.png"
+              width="200"
+              height="300"
+              alt="Portrait of Sean"
+            />
           </div>
           <div>
             <p>Intro</p>
@@ -47,7 +57,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <div class="container">
           <div>
             <h2>Projects</h2>
@@ -73,7 +83,7 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div id="contact" class="container">
         <h2>Contact</h2>
         <p>Email</p>
         <ul>
