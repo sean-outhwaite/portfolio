@@ -12,6 +12,8 @@
   --font-display: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radius: 16px;
 }
 
 /* Default Styles */
@@ -38,6 +40,12 @@ body {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -221,6 +229,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--placeholder);
 }
 
 .about-main {
