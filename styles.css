@@ -15,7 +15,26 @@
 }
 
 body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--ink);
+}
+a:hover {
+  color: var(--ink-2);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 ul {
@@ -278,6 +297,10 @@ ul {
 .site-footer {
   background: var(--ink);
   color: var(--bg);
+}
+
+.site-footer .section-title {
+  color: #b4b4bc;
 }
 
 .contact {
