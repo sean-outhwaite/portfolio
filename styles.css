@@ -94,6 +94,10 @@ ul {
   color: var(--ink-2);
 }
 
+.highlight {
+  color: var(--accent);
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
