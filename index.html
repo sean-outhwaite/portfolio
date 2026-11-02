@@ -14,9 +14,33 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.2.6/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11.2.6/swiper-bundle.min.js"
+      defer
+    ></script>
   </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.project-swiper').forEach((el) => {
+        new Swiper(el, {
+          effect: 'cards',
+          grabCursor: true,
+          cardsEffect: {
+            perSlideOffset: 10,
+            perSlideRotate: 2,
+            slideShadows: false,
+          },
+        })
+      })
+    })
+  </script>
   <body>
     <header class="site-header container">
       <a href="#summary" class="logo"
@@ -115,16 +139,38 @@
               <span class="highlight">.</span>
             </p>
           </div>
-
           <article class="project">
-            <img
-              class="project-image"
-              src="images/backlog.png"
-              alt="Backlog's dashboard showing a list of movies, tv shows, books, and games"
-              width="1280"
-              height="800"
-              loading="lazy"
-            />
+            <div class="swiper project-swiper" aria-label="Backlog screenshots">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/backlog.png"
+                    alt="Backlog's dashboard showing a list of movies, tv shows, books, and games"
+                    width="1280"
+                    height="800"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/backlog-details.png"
+                    alt="Backlog's details view showing information about a specific movie"
+                    width="1280"
+                    height="800"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/backlog-mobile.png"
+                    alt="Backlog's layout on mobile devices"
+                    width="1082"
+                    height="2402"
+                  />
+                </div>
+              </div>
+            </div>
             <div class="project-content">
               <span class="meta">2026 · Solo project</span>
               <h3>Backlog</h3>

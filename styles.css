@@ -381,6 +381,16 @@ ul {
   text-underline-offset: 4px;
 }
 
+.project-swiper {
+  flex: 999 1 420px;
+  min-width: 0;
+  overflow: visible;
+  padding-right: 48px;
+}
+.project-swiper .project-image {
+  width: 100%;
+}
+
 /* Footer */
 .site-footer {
   background: var(--ink);
