@@ -235,6 +235,74 @@
           <article class="project project-flip">
             <img
               class="project-image"
+              src="images/shoplock.png"
+              alt="Hovering over an item in Shoplock, showing tooltip with item details"
+              width="1280"
+              height="800"
+              loading="lazy"
+            />
+            <div class="project-content">
+              <span class="meta">2026 · Solo project</span>
+              <h3>Shoplock</h3>
+              <p>
+                An almost 1:1 replica of the item shop from Valve's game
+                Deadlock. View live item data fetched from the community API and
+                create a build of your desired items.
+              </p>
+              <p>
+                I really like a lot of the UI and interactions in this game. I
+                wanted to look under the hood to see how Valve does this, so I
+                learnt about their Panorama UI system and did my best to rebuild
+                the shop as a fully front-end app - including animations and
+                sound effects.
+              </p>
+              <ul class="tech">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+              </ul>
+              <div class="links">
+                <a
+                  href="https://shoplock.sean-outhwaite.workers.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live link<svg
+                    aria-hidden="true"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg
+                ></a>
+                <a
+                  href="https://github.com/sean-outhwaite/shoplock"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub link<svg
+                    aria-hidden="true"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" /></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              class="project-image"
               src="images/clicker.png"
               alt="Clicker's main window showing click settings and controls"
               width="1280"
@@ -284,55 +352,63 @@
             </div>
           </article>
 
-          <article class="project">
-            <img
-              class="project-image"
-              src="images/shoplock.png"
-              alt="Hovering over an item in Shoplock, showing tooltip with item details"
-              width="1280"
-              height="800"
-              loading="lazy"
-            />
+          <article class="project project-flip">
+            <div class="swiper project-swiper" aria-label="trAIn screenshots">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/tabs.gif"
+                    alt="trAIn's navigation showing a train moving along the nav rail"
+                    width="1280"
+                    height="800"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/dashboard2.png"
+                    alt="trAIn's dashboard showing Claude's generated insights"
+                    width="1280"
+                    height="800"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="project-image"
+                    src="images/activity.png"
+                    alt="trAIn's activity view showing details of an activity"
+                    width="1280"
+                    height="800"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
             <div class="project-content">
               <span class="meta">2026 · Solo project</span>
-              <h3>Shoplock</h3>
+              <h3>trAIn</h3>
               <p>
-                An almost 1:1 replica of the item shop from Valve's game
-                Deadlock. View live item data fetched from the community API and
-                create a build of your desired items.
+                A local dashboard for Garmin and Strava data. Uses Claude via a
+                logged-in CLI session to use the Strava MCP, generate insights,
+                and provide a chat component to ask questions.
               </p>
               <p>
-                I really like a lot of the UI and interactions in this game. I
-                wanted to look under the hood to see how Valve does this, so I
-                learnt about their Panorama UI system and did my best to rebuild
-                the shop as a fully front-end app - including animations and
-                sound effects.
+                I've been running a lot lately and using Claude to help me
+                analyse data and tailor a training plan. I wanted more than just
+                a chat session though, so I built trAIn to provide
+                visualisations while still giving written feedback and tips.
               </p>
               <ul class="tech">
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Vite</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Claude Code</li>
               </ul>
               <div class="links">
                 <a
-                  href="https://shoplock.sean-outhwaite.workers.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Live link<svg
-                    aria-hidden="true"
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M7 17 17 7M8 7h9v9" /></svg
-                ></a>
-                <a
-                  href="https://github.com/sean-outhwaite/shoplock"
+                  href="https://github.com/sean-outhwaite/train"
                   target="_blank"
                   rel="noopener noreferrer"
                   >GitHub link<svg
